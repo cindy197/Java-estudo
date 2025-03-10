@@ -1,0 +1,23 @@
+import java.util.Locale; // utilizado para modificar a localização
+public class Main {
+
+    public static void main (String[] args){
+
+        int y = 32;
+        double x = 10.39876;
+        System.out.println(y);
+        System.out.println(x);
+        System.out.println("Bom dia" );
+
+        // Suponha que queira mudar as casas, no lugar de pintln irá usar printf (que significa formatado)
+        // para especificar a quantidade de casas decimais irá utilizar %.nf e em seguida o %n (que trata-se da
+        // quebra de linha) seguida da "," e da variável que quer imprimir.
+
+        double x = 10.39876;
+        System.out.println(x);
+        Locale.setDefault(Locale.US); //Utilizado para modificar a localização
+        System.out.printf("%.2f%n", x);
+
+
+    }
+}
