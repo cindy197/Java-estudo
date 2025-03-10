@@ -1,0 +1,20 @@
+ // Concatenar
+
+        System.out.println("Resultado = " + x + " Metros");
+
+        // Para concatenar com o PrintF é feito da seguinte forma:
+        // "TEXTO1 %f TEXTO2 %f TEXTO3 %f", variavel1, variavel 2
+        // Lembrando que :
+        // * %f = ponto flutuante
+        // * %n = quebra de linha
+
+        System.out.printf("Resultado = %.2f metros%n", x);
+
+        // Para concatenar varios elementos em um mesmo comando de escrita segue a regra geral
+        // * %d = inteiro
+        // * %s = texto
+
+        String nome = "Maria";
+        int idade = 31;
+        double renda = 4000.0;
+        System.out.printf("%s tem %d anos e recebe R$ %.2f reais%n", nome, idade, renda);
