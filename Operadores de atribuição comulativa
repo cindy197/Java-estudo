@@ -1,0 +1,25 @@
+import java.util.Locale;
+import java.util.Scanner;
+public class Main {
+    public static void main (String [] args) {
+
+        Locale.setDefault(Locale.US);
+
+        Scanner sc = new Scanner(System.in);
+
+        int min = sc.nextInt();
+
+        double conta = 50.0;
+        if (min > 100) {
+            conta = conta + (min - 100) * 2.0; // min - 100 são os excedentes!
+        }
+        System.out.printf("Valor da conta é R$ %.2f%n", conta);
+    }
+}
+
+Nos operadores de atribuição comulativa é possivel alocar da seguinte forma !
+ double conta = 50.0;
+        if (min > 100) {
+            conta += (min - 100) * 2.0; // min - 100 são os excedentes!
+        }
+Pois significa que variavel a recebe a + b ! Assim procede pra os demais operadores sempre associando: operador= 
